@@ -28,6 +28,7 @@ This plugin extends your existing xcode project by parsing and modifying the pro
 |WIDGET_NAME| <Name of main project> Widget | Name of your widget |
 |WIDGET_BUNDLE_SUFFIX| widget | The last part of the widget bundle id |
 |ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES| YES | You might have to turn this off (change to NO) if you use other swift based plugins (such as cordova-plugin-geofence) |
+|SWIFT_VERSION| 3.0 | Swift version |
 
 This can be done either manually in the config.xml after installing the plugin, or be done through the CLI.
 
