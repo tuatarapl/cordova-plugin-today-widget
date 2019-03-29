@@ -77,7 +77,7 @@ module.exports = function (context) {
   // Get the bundle-id from config.xml
   var elementTree = context.requireCordovaModule('elementtree');
   var etree = elementTree.parse(contents);
-  var bundleId = etree.getroot().get('id');
+  var bundleId = etree.getroot().get('ios-CFBundleIdentifier') || etree.getroot().get('id');
 
   var iosFolder = context.opts.cordova.project
     ? context.opts.cordova.project.root
